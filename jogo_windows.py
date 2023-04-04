@@ -11,7 +11,7 @@ while forca == True:
         letra_chutada = input("Digite uma letra: ")
         tentativas+=1
         palavra_formada = ''
-        if len(letra_chutada)>1 or len(letra_chutada) == 0:
+        if len(letra_chutada)>1 or len(letra_chutada) == 0 or not letra_chutada.isalpha():
             print("Chute UMA letra apenas.")
             continue
         else:
